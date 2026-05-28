@@ -56,7 +56,8 @@ a { text-decoration: none; color: inherit; }
   background: var(--accent);
   padding: 8px 20px;
   border-radius: 2px;
-  transition: background 0.2s, opacity 0.2s;
+  opacity: 1;
+  transition: background 0.2s;
   mix-blend-mode: normal;
 }
 .nav-cta:hover { background: var(--accent-light); }
@@ -421,7 +422,7 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 600px) {
   .nav { padding: 24px 20px; }
-  .hero-text { padding: 0 24px; }
+  .hero-text { padding: 110px 24px 0; }
   .hero-scroll { right: 20px; }
   .stats { padding: 80px 20px; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
