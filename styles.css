@@ -64,47 +64,38 @@ a { text-decoration: none; color: inherit; }
 
 /* ─── Hero ─── */
 .hero {
-  position: relative;
   height: 100dvh;
   min-height: 600px;
+  display: flex;
   overflow: hidden;
+}
+
+.hero-left {
+  position: relative;
+  width: 50%;
   background: var(--black);
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 60px 80px;
+  color: var(--white);
 }
 
-.hero-img-wrap {
-  position: absolute;
-  inset: 0;
+.hero-right {
+  width: 50%;
+  overflow: hidden;
   opacity: 0;
   animation: fadeIn 1.2s 0.3s ease forwards;
-}
-
-.hero-img-wrap::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    105deg,
-    rgba(0,0,0,0.62) 0%,
-    rgba(0,0,0,0.35) 50%,
-    rgba(0,0,0,0.05) 100%
-  );
 }
 
 .hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 15%;
-  filter: brightness(0.8);
+  object-position: center top;
 }
 
 .hero-text {
-  position: relative;
-  z-index: 2;
-  color: var(--white);
-  padding: 120px 60px 0;
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 1s 0.8s ease forwards;
@@ -120,7 +111,7 @@ a { text-decoration: none; color: inherit; }
 
 .hero-name {
   font-family: var(--serif);
-  font-size: clamp(72px, 12vw, 140px);
+  font-size: clamp(64px, 8vw, 120px);
   font-weight: 300;
   line-height: 0.92;
   letter-spacing: -0.01em;
@@ -142,8 +133,7 @@ a { text-decoration: none; color: inherit; }
 .hero-scroll {
   position: absolute;
   bottom: 40px;
-  right: 40px;
-  z-index: 2;
+  left: 60px;
   opacity: 0;
   animation: fadeIn 1s 1.4s ease forwards;
 }
@@ -391,6 +381,19 @@ a { text-decoration: none; color: inherit; }
 
 /* ─── Responsive ─── */
 @media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero-left {
+    width: 100%;
+    justify-content: flex-end;
+    padding: 50px 40px 60px;
+  }
+  .hero-right {
+    width: 100%;
+    height: 55vh;
+  }
+
   .stats-inner {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -425,8 +428,8 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 600px) {
   .nav { padding: 24px 20px; }
-  .hero-text { padding: 110px 24px 0; }
-  .hero-scroll { right: 20px; }
+  .hero-left { padding: 36px 24px 52px; }
+  .hero-scroll { left: 24px; }
   .stats { padding: 80px 20px; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .portfolio { padding: 80px 0; }
