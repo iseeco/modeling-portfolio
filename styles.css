@@ -96,7 +96,7 @@ a { text-decoration: none; color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 15%;
   filter: brightness(0.8);
 }
 
@@ -228,7 +228,7 @@ a { text-decoration: none; color: inherit; }
 .editorial-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 58vw 44vw 40vw 34vw;
+  grid-template-rows: 58vw 44vw 40vw 34vw 55vw;
   gap: 4px;
   padding: 0 40px;
 }
@@ -250,6 +250,9 @@ a { text-decoration: none; color: inherit; }
 .grid-item:nth-child(8) { grid-column: 1 / 5; }
 .grid-item:nth-child(9) { grid-column: 5 / 9; }
 .grid-item:nth-child(10) { grid-column: 9 / 13; }
+
+/* Row 5 — full width */
+.grid-item:nth-child(11) { grid-column: 1 / 13; }
 
 /* Per-photo crop adjustments */
 .grid-item:nth-child(2) img { object-position: center 85%; }
