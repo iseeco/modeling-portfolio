@@ -221,7 +221,7 @@ a { text-decoration: none; color: inherit; }
 .editorial-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 58vw 56vw 40vw 44vw 50vw;
+  grid-template-rows: 58vw 56vw 44vw 50vw;
   gap: 4px;
   padding: 0 40px;
 }
@@ -234,29 +234,21 @@ a { text-decoration: none; color: inherit; }
 .grid-item:nth-child(3) { grid-column: 1 / 7; }
 .grid-item:nth-child(4) { grid-column: 7 / 13; }
 
-/* Row 3 — three across */
-.grid-item:nth-child(5) { grid-column: 1 / 5; }
-.grid-item:nth-child(6) { grid-column: 5 / 9; }
-.grid-item:nth-child(7) { grid-column: 9 / 13; }
+/* Row 3 — wide landscape + portrait */
+.grid-item:nth-child(5) { grid-column: 1 / 8; }
+.grid-item:nth-child(6) { grid-column: 8 / 13; }
 
-/* Row 4 — wide landscape + portrait */
-.grid-item:nth-child(8) { grid-column: 1 / 8; }
-.grid-item:nth-child(9) { grid-column: 8 / 13; }
-
-/* Row 5 — blue water + Greece */
-.grid-item:nth-child(10) { grid-column: 1 / 7; }
-.grid-item:nth-child(11) { grid-column: 7 / 13; }
+/* Row 4 — blue water + Greece */
+.grid-item:nth-child(7) { grid-column: 1 / 7; }
+.grid-item:nth-child(8) { grid-column: 7 / 13; }
 
 /* Per-photo crop adjustments */
-.grid-item:nth-child(1) img  { object-position: center 15%; }
-.grid-item:nth-child(2) img  { object-position: center 10%; }
-.grid-item:nth-child(3) img  { object-position: center 45%; }
-.grid-item:nth-child(4) img  { object-position: center 60%; }
-.grid-item:nth-child(5) img  { object-position: center 35%; }
-.grid-item:nth-child(6) img  { object-position: center 20%; }
-.grid-item:nth-child(7) img  { object-position: center 20%; }
-.grid-item:nth-child(9) img  { object-position: center 60%; }
-.grid-item:nth-child(10) img { object-position: center 80%; }
+.grid-item:nth-child(1) img { object-position: center 15%; }
+.grid-item:nth-child(2) img { object-position: center 10%; }
+.grid-item:nth-child(3) img { object-position: center 45%; }
+.grid-item:nth-child(4) img { object-position: center 60%; }
+.grid-item:nth-child(6) img { object-position: center 60%; }
+.grid-item:nth-child(7) img { object-position: center 80%; }
 
 .grid-item {
   position: relative;
