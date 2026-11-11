@@ -222,7 +222,7 @@ a { text-decoration: none; color: inherit; }
 .editorial-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 58vw 44vw 40vw 34vw 55vw 62vw;
+  grid-template-rows: 58vw 44vw 40vw 34vw 50vw;
   gap: 4px;
   padding: 0 40px;
 }
@@ -245,23 +245,18 @@ a { text-decoration: none; color: inherit; }
 .grid-item:nth-child(9) { grid-column: 5 / 9; }
 .grid-item:nth-child(10) { grid-column: 9 / 13; }
 
-/* Row 5 — full width */
-.grid-item:nth-child(11) { grid-column: 1 / 13; }
-
-/* Row 6 — two portraits */
-.grid-item:nth-child(12) { grid-column: 1 / 7; }
-.grid-item:nth-child(13) { grid-column: 7 / 13; }
-
-/* Beach portrait crops */
-.grid-item:nth-child(12) img { object-position: center 15%; }
-.grid-item:nth-child(13) img { object-position: center 10%; }
+/* Row 5 — two halves */
+.grid-item:nth-child(11) { grid-column: 1 / 7; }
+.grid-item:nth-child(12) { grid-column: 7 / 13; }
 
 /* Per-photo crop adjustments */
-.grid-item:nth-child(2) img { object-position: center 85%; }
-.grid-item:nth-child(3) img { object-position: center 20%; }
-.grid-item:nth-child(4) img { object-position: center center; }
-.grid-item:nth-child(5) img { object-position: center 20%; }
-.grid-item:nth-child(6) img { object-position: center 75%; }
+.grid-item:nth-child(1) img  { object-position: center 15%; }
+.grid-item:nth-child(2) img  { object-position: center 10%; }
+.grid-item:nth-child(3) img  { object-position: center 20%; }
+.grid-item:nth-child(7) img  { object-position: center 20%; }
+.grid-item:nth-child(8) img  { object-position: center 20%; }
+.grid-item:nth-child(10) img { object-position: center center; }
+.grid-item:nth-child(12) img { object-position: center top; }
 
 .grid-item {
   position: relative;
