@@ -82,13 +82,16 @@ a { text-decoration: none; color: inherit; }
 }
 
 .hero-right {
-  width: 50%;
+  flex: 1;
+  position: relative;
   overflow: hidden;
   opacity: 0;
   animation: fadeIn 1.2s 0.3s ease forwards;
 }
 
 .hero-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
