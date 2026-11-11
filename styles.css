@@ -248,7 +248,7 @@ a { text-decoration: none; color: inherit; }
 /* Per-photo crop adjustments */
 .grid-item:nth-child(1) img { object-position: center 15%; }
 .grid-item:nth-child(2) img { object-position: center 10%; }
-.grid-item:nth-child(3) img { object-position: center 45%; }
+.grid-item:nth-child(3) img { object-position: center 80%; }
 .grid-item:nth-child(5) img { object-position: center 60%; }
 .grid-item:nth-child(6) img { object-position: center 35%; }
 .grid-item:nth-child(7) img { object-position: center 80%; }
